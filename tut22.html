@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            background: url(/bg.jpg) no-repeat center center fixed;
+            background-size: cover;
+        }
+        .container{
+            border: 2px solid purple;
+            display: inline-block;
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            top: 20%;
+            left: 40%;
+            padding: 30px;
+        }
+        .box{
+            width: 100%;
+            /* border: 2px solid pink; */
+        }
+        .box input{
+            width: 80%;
+            height: 30px;
+            background: none;
+            border: none;
+            border-radius: 5px;
+            border-bottom: 2px solid purple;
+            margin: 20px;
+
+        }
+        .box i{
+            width: 30px;
+            text-align: center;
+            color: white;
+        }
+        .container h3{
+            font-size: 40px;
+            padding-left: 80px;
+            border-bottom: 5px solid purple;
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+        }
+        .container button{
+            background: none;
+            color: white;
+            width: 50%;
+            float: left;
+            font-size: 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 35px;
+        }
+        button:hover{
+            color: purple;
+            background-color: black;
+            border-bottom: 2px solid purple;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>Login Form</h3>
+        <div class="box">
+            <i class="fa fa-envelope"></i>
+            <input type="email" name="email" id="email" placeholder="Enter E-mail">
+        </div>
+        <div class="box">
+            <i class="fa fa-key"></i>
+            <input type="password" name="pass" id="pass" placeholder="Enter Password">
+        </div>
+        <button class="btn">Submit</button>
+        <button type="reset">Reset</button>
+    </div>
+    
+
+    
+</body>
+</html>
